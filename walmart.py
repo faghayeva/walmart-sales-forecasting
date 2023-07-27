@@ -174,9 +174,7 @@ with interface:
     
     # Lüğət data strukturunun Pandas dataframe data strukturuna çevirilməsi
     input_df = pd.DataFrame(data=data_dictionary, index=[0])
-    
-    # Səhifənin uzun xətt ilə bölünməsi
-    st.markdown(body = '***')    
+       
     
     # Səhifədə kiçik başlığın göstərilməsi
     st.subheader(body = 'Model Prediction')
