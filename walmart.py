@@ -42,7 +42,7 @@ class InitialPreprocessor(BaseEstimator, TransformerMixin):
 
 
 # Şəkilin yüklənməsi
-walmart_image =Image.open(fp="C:/Users/aghay/Downloads/deployment/walmart.jfif")
+walmart_image =Image.open(fp="walmart.jfif")
 
     
 # Əsas səhifənin yaradılması
