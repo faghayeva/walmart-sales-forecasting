@@ -13,7 +13,7 @@ import PIL
 warnings.filterwarnings(action = 'ignore')
 
 # Datasetin yüklənməsi
-df = pd.read_csv('cleaned_data.csv')
+df = pd.read_csv('cleaned.data.csv')
     
 
 # İlkin əməliyyatlardan ibarət sinifin yaradılması
