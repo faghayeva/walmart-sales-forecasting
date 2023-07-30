@@ -86,7 +86,7 @@ with interface:
 
     # Səhifədə holiday sütunu üçün dəyərlərin təyin olunması
     with IsHoliday:
-        IsHoliday = st.radio(label = 'Does customer have a partner?', options = [True, False], horizontal = True)
+        IsHoliday = st.radio(label = 'Is the week a special holiday week?', options = [True, False], horizontal = True)
     
     # Səhifədə year sütunu üçün dəyərlərin təyin olunması
     with Year:
@@ -210,7 +210,7 @@ with sidebar:
     - **Dept**: The unique department number (numeric)
     - **Date**: Date of sales (date)
     - **Month**: Month of sales (date)
-    - **IsHoliday**: Whether the customer has a partner or not (categorical: ‘FALSE’, ‘TRUE’)
+    - **IsHoliday**: Whether the week is a special holiday week (categorical: ‘FALSE’, ‘TRUE’)
     - **Weekly_Sales**: Target variable - weekly sales (numeric)
     - **Type**: The type of store (categorical: 'A', 'B', 'C')
     - **Size**: The size of the store in square feet (numeric)
