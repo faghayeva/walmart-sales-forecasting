@@ -94,7 +94,8 @@ with interface:
         
     
     # Səhifədə date sütunu üçün dəyərlərin təyin olunması      
-    date = st.selectbox(label='Select Date', options=dates)
+    #date = st.selectbox(label='Select Date', options=dates)
+    date = st.empty()
     
     # Səhifənin uzun xətt ilə bölünməsi
     st.markdown(body = '***')
@@ -118,13 +119,13 @@ with interface:
     st.markdown(body = '***')
     
     # Səhifədə fuel_price sütunu üçün dəyərlərin təyin olunması
-    fuel_price = st.slider(label = 'Fuel_price', min_value = 2472, max_value = 4468, value = int(df.Fuel_price.mean()))
+    fuel_price = st.text_input(label='Fuel price', value=str(int(df.Fuel_price.mean())))
     
     # Səhifənin uzun xətt ilə bölünməsi
     st.markdown(body = '***')
     
     # Səhifədə cpi sütunu üçün dəyərlərin təyin olunması
-    cpi = st.slider(label = 'Cpi', min_value = 126, max_value = 230, value = int(df.Cpi.mean()))
+    cpi = st.slider(label = 'CPI', min_value = 126, max_value = 133, value = int(df.Cpi.mean()))
     
     # Səhifənin uzun xətt ilə bölünməsi
     st.markdown(body = '***')
@@ -136,13 +137,13 @@ with interface:
     st.markdown(body = '***')
     
     # Səhifədə department sütunu üçün dəyərlərin təyin olunması
-    department = st.slider(label = 'Dept', min_value = 1, max_value = 99, value = int(df.Dept.mean()))
+    department = st.slider(label = 'Department', min_value = 1, max_value = 99, value = int(df.Dept.mean()))
     
     # Səhifənin uzun xətt ilə bölünməsi
     st.markdown(body = '***')
     
     # Səhifədə unemployment sütunu üçün dəyərlərin təyin olunması
-    unemployment = st.slider(label = 'Unemployment', min_value = 3000, max_value = 15000, value = int(df.Dept.mean()))
+    unemployment = st.text_input(label='Unemployment rate', value=str(int(df.Unemployment.mean())))
     
     # Səhifənin uzun xətt ilə bölünməsi
     st.markdown(body = '***')
