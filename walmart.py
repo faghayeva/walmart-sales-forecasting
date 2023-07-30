@@ -98,7 +98,7 @@ with interface:
     date = st.empty()
 
     # Define the date variable without displaying it on the website
-    date = date_placeholder.selectbox(label='Select Date', options=dates)
+    date = date.selectbox(label='Select Date', options=dates)
     
     # Səhifənin uzun xətt ilə bölünməsi
     st.markdown(body = '***')
